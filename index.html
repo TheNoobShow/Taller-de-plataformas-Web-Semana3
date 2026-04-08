@@ -41,54 +41,102 @@
     </header>
 
     <main>
-    <section id="servicios" class="section container">
-      <div class="section-title">
-        <p>Nuestros servicios</p>
-        <h2>Soluciones pensadas para una presencia digital profesional</h2>
-      </div>
-      <div class="grid services-grid">
-        <article class="card">
-          <h3>Diseño web</h3>
-          <p>Creación de interfaces claras, accesibles y visualmente atractivas con enfoque responsive.</p>
-        </article>
-        <article class="card">
-          <h3>Branding digital</h3>
-          <p>Definición de identidad visual para redes sociales, páginas de presentación y campañas.</p>
-        </article>
-        <article class="card">
-          <h3>Optimización UX</h3>
-          <p>Mejora de la experiencia de usuario mediante organización del contenido y navegación intuitiva.</p>
-        </article>
-      </div>
-    </section>
+        <section id="servicios" class="section container">
+            <div class="section-title">
+                <p>Nuestros servicios</p>
+                <h2>Soluciones pensadas para una presencia digital profesional</h2>
+            </div>
+            <div class="grid services-grid">
+                <article class="card">
+                    <h3>Diseño web</h3>
+                    <p>Creación de interfaces claras, accesibles y visualmente atractivas con enfoque responsive.</p>
+                </article>
+                <article class="card">
+                    <h3>Branding digital</h3>
+                    <p>Definición de identidad visual para redes sociales, páginas de presentación y campañas.</p>
+                </article>
+                <article class="card">
+                    <h3>Optimización UX</h3>
+                    <p>Mejora de la experiencia de usuario mediante organización del contenido y navegación intuitiva.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-    <section id="portafolio" class="section alt-bg">
-      <div class="container">
-        <div class="section-title">
-          <p>Portafolio</p>
-          <h2>Algunos tipos de proyectos que podríamos desarrollar</h2>
-        </div>
-        <div class="grid portfolio-grid">
-          <article class="portfolio-item">
-            <div class="tag">Landing Page</div>
-            <h3>Campaña de lanzamiento</h3>
-            <p>Diseño de una página de alto impacto para promocionar un nuevo servicio.</p>
-          </article>
-          <article class="portfolio-item">
-            <div class="tag">Catálogo</div>
-            <h3>Vitrina de productos</h3>
-            <p>Presentación visual de productos o servicios con navegación simple y elegante.</p>
-          </article>
-          <article class="portfolio-item">
-            <div class="tag">Institucional</div>
-            <h3>Web corporativa</h3>
-            <p>Sitio de presentación para empresas que desean mostrar misión, equipo y contacto.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+        <section id="portafolio" class="section alt-bg">
+            <div class="container">
+                <div class="section-title">
+                    <p>Portafolio</p>
+                    <h2>Algunos tipos de proyectos que podríamos desarrollar</h2>
+                </div>
+                <div class="grid portfolio-grid">
+                    <article class="portfolio-item">
+                        <div class="tag">Landing Page</div>
+                        <h3>Campaña de lanzamiento</h3>
+                        <p>Diseño de una página de alto impacto para promocionar un nuevo servicio.</p>
+                    </article>
+                    <article class="portfolio-item">
+                        <div class="tag">Catálogo</div>
+                        <h3>Vitrina de productos</h3>
+                        <p>Presentación visual de productos o servicios con navegación simple y elegante.</p>
+                    </article>
+                    <article class="portfolio-item">
+                        <div class="tag">Institucional</div>
+                        <h3>Web corporativa</h3>
+                        <p>Sitio de presentación para empresas que desean mostrar misión, equipo y contacto.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-  </main>
+        <section class="section container dynamic-section">
+            <div class="section-title">
+                <p>Cotiza con nosotros</p>
+                <h2>Cotizador interactivo de proyecto</h2>
+            </div>
+            <div class="quote-box">
+                <form id="quoteForm" class="quote-form" novalidate>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" placeholder="Ej.: Juan Salgado">
+                        <small class="error" id="errorNombre"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input id="correo" name="correo" type="email" placeholder="contacto@JSCDev.cl">
+                        <small class="error" id="errorCorreo"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servicio">Tipo de servicio</label>
+                        <select id="servicio" name="servicio">
+                            <option value="">Seleccione una opción</option>
+                            <option value="landing">Landing page</option>
+                            <option value="corporativa">Sitio corporativo</option>
+                            <option value="catalogo">Catálogo digital</option>
+                        </select>
+                        <small class="error" id="errorServicio"></small>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input id="soporte" type="checkbox">
+                            Agregar soporte mensual
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn">Calcular cotización</button>
+                </form>
+
+                <aside class="result-panel" id="resultado">
+                    <h3>Resultado</h3>
+                    <p>Completa el formulario para visualizar una cotización estimada.</p>
+                </aside>
+            </div>
+        </section>
+
+    </main>
 
     <footer class="footer">
         <div class="container">
